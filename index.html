@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <img id="logo" src="/assets/img/logo.svg" />
+        <p>EPICODE - IL BLOG DEI DEVELOPERS</p>
+        <ul class="listaheader">
+          <li>
+            <i class="fas fa-angle-double-right" style="color: #ffffff"></i>
+            HOME <i class="fas fa-angle-double-left" style="color: #ffffff"></i>
+          </li>
+
+          <li>
+            <i class="fas fa-angle-double-right" style="color: #ffffff"></i>
+            ARTICOLI
+            <i class="fas fa-angle-double-left" style="color: #ffffff"></i>
+          </li>
+
+          <li>
+            <i class="fas fa-angle-double-right" style="color: #ffffff"></i>
+            LAVORA CON NOI
+            <i class="fas fa-angle-double-left" style="color: #ffffff"></i>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <div class="sezione1">
+          <article class="articolo1">
+            <h3 class="titolosec1">Come creare un template per i post</h3>
+            <blockquote>
+              <i class="fas fa-pen-square fa-xs" style="color: #949494"></i>di
+              Mario Rossi -
+              <i class="fas fa-clock fa-xs" style="color: #949494"></i>
+              pubblicato il 25-10-2020
+            </blockquote>
+            <p>
+              La prima cosa da fare è suddividere in blocchi logici la pagina,
+              identificando le <span class="menzione">parti comuni</span> da
+              applicare a tutte le pagine
+            </p>
+            <p>Le varie aree saranno quindi suddivise in:</p>
+
+            <ul class="secondalista">
+              <li>
+                Contenuti di intestazione del tag
+                <span class="tags">&ltheader></span>
+              </li>
+
+              <li>
+                Contenuti centrali variabili del tag
+                <span class="tags"> &ltmain></span> (corpo principale)
+              </li>
+              <li>
+                Contenuti di fine pagina comuni, da inserire nel tag<span
+                  class="tags"
+                  >&ltfooter></span
+                >
+              </li>
+            </ul>
+            <p>
+              Formattazione del codice <br />
+              Il testo dell'articolo dovrà essere formattato per identificare
+              tutte le parti da
+              <span class="menzione"> selezionare con i CSS</span>. Perciò i
+              passi saranno:
+            </p>
+
+            <ol>
+              <li>
+                Progettare su carta il markup finale, assegnando ad ogni
+                specifico testo il tag appropriato
+              </li>
+              <li>Scrivere l'HTML dai tag esterni a quelli interni</li>
+              <li>Applicare gli stili CSS</li>
+            </ol>
+
+            <p class="sezioneintermedia">
+              L'applicazione di stili CSS è cresciuta negli anni fino a
+              raggiungere la diffusione pressochè totale
+            </p>
+
+            <h3>Diffusione dei CSS</h3>
+
+            <table class="tg">
+              <thead>
+                <tr>
+                  <th class="tg-jod3">Anno</th>
+                  <th class="tg-jod3">Supporto bowser</th>
+                  <th class="tg-jod3">% di utilizzo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-73oq">2000</td>
+                  <td class="tg-73oq">20%</td>
+                  <td class="tg-73oq">17%</td>
+                </tr>
+                <tr>
+                  <td class="tg-73oq">2002</td>
+                  <td class="tg-73oq">35%</td>
+                  <td class="tg-73oq">22%</td>
+                </tr>
+                <tr>
+                  <td class="tg-73oq">2004</td>
+                  <td class="tg-73oq">45%</td>
+                  <td class="tg-73oq">42%</td>
+                </tr>
+                <tr>
+                  <td class="tg-73oq">2008</td>
+                  <td class="tg-73oq">80%</td>
+                  <td class="tg-73oq">51%</td>
+                </tr>
+                <tr>
+                  <td class="tg-73oq">2012</td>
+                  <td class="tg-73oq">100%</td>
+                  <td class="tg-73oq">76%</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <p>
+              Un test di validazione potrà essere fatto tamite il
+              <span>
+                <a
+                  href="https://www.daemon-tools.cc/ita/products/dtLite"
+                  target="_blank"
+                  rel="noopener"
+                  >tool online
+                </a>
+                dedicato allo scopo. Una volta ottimizato il nostro obiettivo ed
+                essere stati dei veri developers come loro:
+              </span>
+            </p>
+
+            <iframe
+              class="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Yzp_MPyoIqU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="form">
+              <h2 class="sezione2">NOVITA'</h2>
+              <p class="form2">
+                Vuoi rimanere aggiornato su altre novità del blog? Iscriviti
+                alla newsletter:
+              </p>
+              <form>
+                <input type="email" placeholder="Scrivi la tua email" />
+                <input type="submit" value="Iscriviti" />
+              </form>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
